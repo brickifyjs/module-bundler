@@ -1,0 +1,7 @@
+.vscode
+/coverage
+/docs/lib
+/examples
+/brick.js
+/brick.min.js
+/node_modules

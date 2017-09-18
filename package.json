@@ -1,0 +1,23 @@
+{
+  "name": "brickjs-tool-bundler",
+  "version": "0.1.0",
+  "description": "Simplistic CommonJS module bundler",
+  "author": "Nicolas RAIBAUD",
+  "license": "MIT",
+  "main": "bundle.js",
+  "repository": "brickifys/brickjs-tool-bundler",
+  "scripts": {
+    "lint": "eslint . || true",
+    "test": "ospec",
+    "posttest": "npm run lint",
+    "cover": "istanbul cover --print both ospec"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "istanbul": "^0.4.5",
+    "ospec": "^1.3.1"
+  },
+  "bin": {
+    "bundle": "./bin/bundle"
+  }
+}
