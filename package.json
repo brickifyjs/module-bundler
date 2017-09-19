@@ -1,6 +1,6 @@
 {
   "name": "brickjs-tool-bundler",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Simplistic CommonJS module bundler",
   "author": "Nicolas RAIBAUD",
   "license": "MIT",
