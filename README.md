@@ -2,7 +2,7 @@
 
 Simplistic CommonJS module bundler
 
-Version: 1.0.0
+Version: 0.1.0
 License: MIT
 
 Forked: https://github.com/MithrilJS/mithril.js
