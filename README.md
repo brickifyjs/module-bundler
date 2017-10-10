@@ -7,6 +7,9 @@ License: MIT
 
 Forked: https://github.com/MithrilJS/mithril.js
 
+> Can be used with [Module require for browser](https://github.com/brickifyjs/module-require) in order to use CommonJS in the browser \
+Can be used with [Module require alias](https://github.com/brickifyjs/module-require-alias) in order to use alias without dependency.
+
 ## About
 
 This bundler attempts to aggressively bundle CommonJS modules by assuming the dependency tree is static, similar to what Rollup does for ES6 modules.
