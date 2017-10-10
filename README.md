@@ -1,14 +1,33 @@
-# bundler.js
+# Module Bundler
 
 Simplistic CommonJS module bundler
 
-Version: 0.1.0
 License: MIT
 
 Forked: https://github.com/MithrilJS/mithril.js
 
 > Can be used with [Module require for browser](https://github.com/brickifyjs/module-require) in order to use CommonJS in the browser \
 Can be used with [Module require alias](https://github.com/brickifyjs/module-require-alias) in order to use alias without dependency.
+
+
+## Statistics
+
+[![Github All Releases](https://img.shields.io/github/downloads/brickifyjs/module-bundler/total.svg?style=flat-square)](https://github.com/brickifyjs/module-bundler)
+[![npm](https://img.shields.io/npm/dt/@brickify/m-bundler.svg?style=flat-square)](https://www.npmjs.com/package/@brickify/m-bundler)
+
+## Social
+[![GitHub forks](https://img.shields.io/github/forks/brickifyjs/module-bundler.svg?label=Fork&style=flat-square)](https://github.com/brickifyjs/module-bundler)
+[![GitHub stars](https://img.shields.io/github/stars/brickifyjs/module-bundler.svg?label=Stars&style=flat-square)](https://github.com/brickifyjs/module-bundler)
+[![GitHub watchers](https://img.shields.io/github/watchers/brickifyjs/module-bundler.svg?label=Watch&style=flat-square)](https://github.com/brickifyjs/module-bundler)
+[![Gitter](https://img.shields.io/gitter/room/brickifyjs/module-bundler.svg?style=flat-square)](https://gitter.im/brickifyjs/module-bundler)
+
+## Project Health
+
+[![Travis branch](https://img.shields.io/travis/brickifyjs/module-bundler/master.svg?style=flat-square)](https://travis-ci.org/brickifyjs/module-bundler)
+[![Codecov](https://img.shields.io/codecov/c/github/brickifyjs/module-bundler.svg?style=flat-square)](https://codecov.io/gh/brickifyjs/module-bundler)
+[![bitHound](https://img.shields.io/bithound/dependencies/github/brickifyjs/module-bundler.svg?style=flat-square)](https://www.bithound.io/github/brickifyjs/module-bundler/master/dependencies/npm)
+[![bitHound](https://img.shields.io/bithound/devDependencies/github/brickifyjs/module-bundler.svg?style=flat-square)](https://www.bithound.io/github/brickifyjs/module-bundler/master/dependencies/npm)
+[![Website](https://img.shields.io/website/https/m-bundler.js.brickify.io.svg?label=website&style=flat-square)](https://m-bundler.js.brickify.io)
 
 ## About
 
@@ -29,3 +48,35 @@ Webpack is conservative and treats CommonJS modules as non-statically-analyzable
 ## TODO
 * Add before and after compilation
 * Add LICENSE comment for each dependencies
+
+## Install
+
+```bash
+$ npm install @brickify/m-bundler -g
+```
+
+## Usage
+
+### CLI
+
+```bash
+$ @brickify/m-bundler src/index.js -o bundle.js
+```
+
+### NodeJS
+
+```js
+var bundle = require("./cjsbundle");
+
+bundle("src/index.js", "bundle.js", {
+	w: true, // Watch files
+	m: true, // Minify
+	a: true // Aggressive mode
+});
+```
+
+### OPTIONS
+* `-o` Output path
+* `-w` Watch files changes
+* `-m` Minify bundle
+* `-a` Bundle using aggressive mode 

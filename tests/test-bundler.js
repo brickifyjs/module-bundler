@@ -1,7 +1,7 @@
 "use strict"
 
 var o = require("ospec")
-var bundle = require("../bundle")
+var bundle = require("../cjsbundle")
 
 var fs = require("fs")
 

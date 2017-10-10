@@ -2,7 +2,7 @@
 
 var fs = require("fs");
 
-var bundle = require("./bundle")
+var bundle = require("./cjsbundle")
 var minify = require("./minify")
 
 var aliases = {o: "output", m: "minify", w: "watch", a: "aggressive"}

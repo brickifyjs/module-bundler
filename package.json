@@ -1,17 +1,31 @@
 {
   "name": "@brickify/m-bundler",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Simplistic CommonJS module bundler",
   "author": "Leo Horie",
-  "contributors": ["Nicolas RAIBAUD"],
+  "contributors": [
+    "Nicolas RAIBAUD"
+  ],
   "license": "MIT",
-  "main": "bundle.js",
+  "main": "cjsbundle.js",
   "repository": "brickifyjs/module-bundler",
+  "keywords": [
+    "module",
+    "brickifyjs",
+    "commonjs",
+    "module",
+    "bundler",
+    "minify",
+    "tiny"
+  ],
   "scripts": {
+    "generate-docs": "cp README.md docs/index.md",
+    "report-coverage": "codecovs",
     "lint": "eslint . || true",
     "test": "ospec",
     "posttest": "npm run lint",
-    "cover": "istanbul cover --print both ospec"
+    "coverage": "istanbul cover --print both ospec",
+    "bundle": "node cli"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
@@ -19,6 +33,10 @@
     "ospec": "^1.3.1"
   },
   "bin": {
-    "bundle": "./bin/bundle"
-  }
+    "bundle": "./bin/cjsbundle"
+  },
+  "pre-commit": [
+    "test",
+    "generate-docs"
+  ]
 }
