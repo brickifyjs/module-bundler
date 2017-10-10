@@ -130,7 +130,7 @@ function run(input, output) {
 				+ (rest ? "\n" + def + variable + eq + "_" + uuid : "") // if `rest` is truthy, it means the expression is fluent or higher-order (e.g. require(path).foo or require(path)(foo)
 		}
 
-		var versionTag = "__BRICK__VERSION__"
+		var versionTag = "__VERSION__"
 		var packageFile = __dirname + "/../package.json"
 		var code = process(path.resolve(input), read(input))
 			.replace(/^\s*((?:var|let|const|)[\t ]*)([\w_$\.]+)(\s*=\s*)(\2)(?=[\s]+(\w)|;|$)/gm, "") // remove assignments to self
