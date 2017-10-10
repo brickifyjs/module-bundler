@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Simplistic CommonJS module bundler",
   "author": "Leo Horie",
+  "contributors": "Nicolas RAIBAUD",
   "license": "MIT",
   "main": "bundle.js",
   "repository": "brickifys/brickjs-tool-bundler",
