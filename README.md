@@ -11,7 +11,7 @@ Forked: https://github.com/MithrilJS/mithril.js
 
 This bundler attempts to aggressively bundle CommonJS modules by assuming the dependency tree is static, similar to what Rollup does for ES6 modules.
 
-Most browsers don't support ES6 `import/export` syntax, but we can achieve modularity by using CommonJS module syntax and employing [`module.js`](https://github.com/brickifyjs/module-require/README.md) in browser environments.
+Most browsers don't support ES6 `import/export` syntax, but we can achieve modularity by using CommonJS module syntax and employing [`module.js`](https://github.com/brickifyjs/module-require) in browser environments.
 
 Webpack is conservative and treats CommonJS modules as non-statically-analyzable since `require` and `module.exports` are legally allowed everywhere. Therefore, it must generate extra code to resolve dependencies at runtime (i.e. `__webpack_require()`). Rollup only works with ES6 modules. ES6 modules can be bundled more efficiently because they are statically analyzable, but some use cases are difficult to handle due to ES6's support for cyclic dependencies and hosting rules. This bundler assumes code is written in CommonJS style but follows a strict set of rules that emulate statically analyzable code and favors the usage of the factory pattern instead of relying on obscure corners of the Javascript language (hoisting rules and binding semantics).
 
